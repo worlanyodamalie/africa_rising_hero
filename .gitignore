@@ -7,20 +7,11 @@
 # Ignore bundler config.
 /.bundle
 
-# Ignore the default SQLite database.
-/db/*.sqlite3
-/db/*.sqlite3-journal
-
 # Ignore all logfiles and tempfiles.
 /log/*
-<<<<<<< HEAD
 /tmp/*
 !/log/.keep
 !/tmp/.keep
 
 # Ignore Byebug command history file.
 .byebug_history
-=======
-!/log/.keep
-/tmp
->>>>>>> 92b8ccc04b504aaa0d2b14e313a2fd4f8d077aed
