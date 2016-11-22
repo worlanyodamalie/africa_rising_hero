@@ -1,0 +1,6 @@
+<!-- <p><%= @complaint.picture %></p>
+ --> <p><%= image_tag @complaint.picture.url if @complaint.picture? %></p>
+ 
+<h3><%= @complaint.description %></h3>
+<p><%= @complaint.location %></p>
+<p><%= link_to 'Back', complaints_path %></p>

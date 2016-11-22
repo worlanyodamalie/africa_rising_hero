@@ -1,0 +1,17 @@
+<h1>Report Broken System</h1>
+<%= form_for(@complaint, html: { multipart: true}) do |f| %>
+    <span class="picture">
+    	<%= f.file_field :picture %>
+    </span>
+	<p>
+		<%= f.label :description %><br>
+		<%= f.text_area :description %>
+	</p>
+
+	<p>
+		<%= f.label :location %><br>
+		<%= f.text_field :location %>
+	</p>
+
+	<%= f.submit %>
+ <% end %>	
