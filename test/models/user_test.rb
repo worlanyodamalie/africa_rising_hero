@@ -19,7 +19,7 @@ class UserTest < ActiveSupport::TestCase
   end 
 
   test "email should be present" do
-  	@user.email = "  "
+  	@user.email = ""
   	assert_not @user.valid?
   end
 
@@ -29,7 +29,7 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "email should not be too long" do
-  	@user.email = "a" * 244 + "@exampe.com"
+  	@user.email = "a" * 244 + "@example.com"
   	assert_not @user.valid?
   end
 
@@ -51,7 +51,7 @@ class UserTest < ActiveSupport::TestCase
     end
     end
 
-    test "email addresses should be unique" do
+    test "email address should be unique" do
     	duplicate_user = @user.dup
     	duplicate_user.email = @user.email.upcase
     	@user.save

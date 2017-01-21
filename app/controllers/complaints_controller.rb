@@ -6,7 +6,7 @@ class ComplaintsController < ApplicationController
  def create
  	@complaint = Complaint.new(complaint_params)
  	if @complaint.save
- 		flash[:notice] = "Broken system has been reported.Progress on reported complaint will be communicated soon."
+ 		#flash[:notice] = "Broken system has been reported.Progress on reported complaint will be communicated soon."
  		redirect_to @complaint
 
  	else
