@@ -12,3 +12,8 @@ example:
   email: example@gmail.com
   password_digest: <%= User.digest('password') %>
 
+dennis:
+  name: dennis
+  email: dennis@gmail.com
+  password_digest: <%= User.digest('password') %>  
+
